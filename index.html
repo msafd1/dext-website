@@ -84,7 +84,8 @@ a { color: inherit; }
 .how h2 { font-size: clamp(2.1rem, 4.4vw, 3.4rem); max-width: 16ch; }
 .how .sub { margin: 18px 0 0; max-width: 34rem; color: var(--olive); }
 .steps { list-style: none; margin: clamp(40px, 6vw, 72px) 0 0; padding: 0; display: grid; gap: 32px; grid-template-columns: 1fr; }
-@media (min-width: 768px) { .steps { grid-template-columns: repeat(3, 1fr); gap: 40px; } }
+@media (min-width: 640px) { .steps { grid-template-columns: repeat(2, 1fr); gap: 40px; } }
+@media (min-width: 1024px) { .steps { grid-template-columns: repeat(4, 1fr); } }
 .steps li { border-top: 1px solid var(--rule); padding-top: 24px; }
 .icon { width: 32px; height: 32px; margin-bottom: 18px; fill: none; stroke: var(--olive); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .steps h3 { margin: 0 0 6px; font-family: var(--serif); font-variation-settings: 'SOFT' 100, 'WONK' 1; font-weight: 500; font-size: 1.35rem; letter-spacing: -0.01em; }
@@ -185,8 +186,9 @@ footer { border-top: 1px solid var(--rule); }
     <p class="sub">Nothing is worn on the hand, so people work exactly as they normally would.</p>
     <ol class="steps">
       <li><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 11c8-1.5 18-1.5 26 0M3 21c8 1.5 18 1.5 26 0"/><rect x="12" y="7" width="8" height="18" rx="2.5"/></svg><h3>Wear</h3><p>A soft band on the forearm, where the muscles that move the fingers sit.</p></li>
+      <li><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 13h22l-2.5 14h-17z"/><path d="M11 13l5-8 5 8"/></svg><h3>Perform</h3><p>Do the task you want a robot to learn, such as picking, assembling or packing, while the band records.</p></li>
       <li><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M2 16h6l2.5-7 4 14 4-18 3.5 11H30"/></svg><h3>Decode</h3><p>Software turns eight channels of muscle signals into finger motion and grip force.</p></li>
-      <li><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="15" width="14" height="12" rx="2.5"/><path d="M11 15V6M15 15V3.5M19 15V5M23 15V8M9 21l-5-5"/></svg><h3>Train</h3><p>Robotics teams use the data to teach robot hands real-world skills.</p></li>
+      <li><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="15" width="14" height="12" rx="2.5"/><path d="M11 15V6M15 15V3.5M19 15V5M23 15V8M9 21l-5-5"/></svg><h3>Train</h3><p>Robotics teams use the data to teach robot hands that same task.</p></li>
     </ol>
   </section>
 
